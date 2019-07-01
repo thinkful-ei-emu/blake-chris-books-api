@@ -27,7 +27,7 @@ class App extends React.Component {
 
 
   bookApiCall = (search) => {
-    const url = `https://www.googleapis.com/books/v1/volumes?q=${search}${this.state.filterState ? `&filter=${this.state.filterState}`:''}&maxResults=10${this.state.printType ?`&printType=${this.state.printType}`:''}&key=AIzaSyAi0p4a2Xxej6GN4FVrflr4A7Iy1WO3kTU`;
+    const url = `https://www.googleapis.com/books/v1/volumes?q=${search}${this.state.filterState ? `&filter=${this.state.filterState}`:''}&maxResults=10${this.state.printType ?`&printType=${this.state.printType}`:''}&key=[Need API Key]`;
     //          'https://www.googleapis.com/books/v1/volumes?q=cheese&filter=full&maxResults=10&printType=books&key=[YOUR_API_KEY]'
     //                       https://www.googleapis.com/books/v1/volumes?q=cheese&maxResults=10&printType=full&key=AIzaSyAi0p4a2Xxej6GN4FVrflr4A7Iy1WO3kTU 
     fetch(url)
